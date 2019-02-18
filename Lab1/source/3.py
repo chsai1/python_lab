@@ -1,0 +1,8 @@
+input_string = input("Enter a python list ")
+list1  = input_string.split()
+print(list1)
+input_string = input("Enter a web list ")
+list2  = input_string.split()
+print(list2)
+print('common:', set(list1).intersection(set(list2)))
+print('not common students', (set(list1).union(set(list2))).difference(set(list1).intersection(set(list2))))
